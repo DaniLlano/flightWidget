@@ -3,7 +3,7 @@ import TableHead from "./TableHead"
 
 const Table = () => {
   return (
-    <div>
+    <div className="table">
         <TableHead />
         <TableBody />
     </div>

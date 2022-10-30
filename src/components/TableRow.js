@@ -1,8 +1,15 @@
-import React from 'react'
+import TableCell from './TableCell'
 
-const TableRow = () => {
+const TableRow = ({ flight }) => {
+
+    const value = Object.values(flight)
+    
   return (
-    <div>TableRow</div>
+    <div className='tableRow'>
+        {value?.map((val, _index) => (
+            <TableCell key={_index} val={val} />
+        ))}
+    </div>
   )
 }
 

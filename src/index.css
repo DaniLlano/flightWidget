@@ -17,6 +17,10 @@ body {
   background-color: rgb(255, 237, 211);
 }
 
+.header {
+  padding: 10px;
+}
+
 .departures {
   background-color: rgb(6,6,6);
   border-radius: 10px;
@@ -25,30 +29,32 @@ body {
   rgba(0, 0, 0, 0.3) 0 8px 16px -8px;
 }
 
+.table {
+  background-color: rgb(46, 46, 46);
+  text-align: left;
+}
+
 .tableHead {
   display: grid;
-  grid-template-columns: 1.5rem repeat(5, min-content);
-  grid-gap: 1rem;
+  grid-template-columns:160px 700px 205px 135px 260px;
+  grid-gap: 16px;
   padding: 10px;
 }
 
-.tableHead > #time {
-  grid-column: 2;
+.tableRow {
+  display: grid;
+  grid-template-columns: 160px 700px 205px 135px 260px;
+  grid-gap: 16px;
+  padding: 10px;
 }
 
-.tableHead > #destination {
-  grid-column: 3;
+.tableCell {
+  display: flex;
+  flex-direction: row;
 }
 
-.tableHead > #flight {
-  grid-column: 4;
+.tableCell p {
+  border: solid 4px rgb(26, 26, 26);
+  background-color: rgb(0, 0, 0);
+  min-width: 20px;
 }
-
-.tableHead > #gate {
-  grid-column: 5;
-}
-
-.tableHead > #remarks {
-  grid-column: 6;
-}
-

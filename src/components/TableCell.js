@@ -1,8 +1,14 @@
 import React from 'react'
 
-const TableCell = () => {
+const TableCell = ({ val }) => {
   return (
-    <div>TableCell</div>
+    <div className='tableCell'>
+        {Array.from(val).map((char, _index) =>(
+            <p>
+                {char}
+            </p>
+        ))}
+    </div>
   )
 }
 
