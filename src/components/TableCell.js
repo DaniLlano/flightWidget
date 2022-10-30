@@ -1,12 +1,10 @@
-import React from 'react'
+import TableChar from './TableChar'
 
 const TableCell = ({ val }) => {
   return (
     <div className='tableCell'>
-        {Array.from(val).map((char, _index) =>(
-            <p>
-                {char}
-            </p>
+        {Array.from(val).map((char, index) => (
+            <TableChar key={index} char={char} index={index} />
         ))}
     </div>
   )

@@ -6,8 +6,8 @@ const TableRow = ({ flight }) => {
     
   return (
     <div className='tableRow'>
-        {value?.map((val, _index) => (
-            <TableCell key={_index} val={val} />
+        {value?.map((val, index) => (
+            <TableCell key={index} val={val} />
         ))}
     </div>
   )
